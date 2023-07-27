@@ -1,0 +1,44 @@
+@import url('reset.css');
+.header {
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+}
+
+.header div {
+    color: #fff;
+}
+
+.main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.background-text {
+    background-color: midnightblue;
+    padding: 2rem 2rem;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.background-btn {
+    border-radius: 0.5rem;
+    border: 1px solid midnightblue;
+    padding: 1rem;
+    color: midnightblue;
+    background-color: #fff;
+}
+
+.background-btn:hover {
+    cursor: pointer;
+}
