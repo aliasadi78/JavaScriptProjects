@@ -1,0 +1,49 @@
+@import url('reset.css');
+
+body {
+    background-color: #CECE5A;
+}
+
+.main {
+    width: 50%;
+    border-radius: 1rem;
+    background-color: #FFE17B;
+    border: 1px solid #C51605;
+    box-shadow: 0 6px 6px rgba(0,0,0,0.2);
+}
+
+.main>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.counter {
+    color: #C51605;
+    font-weight: 500;
+    font-size: 5rem;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+#count {
+    color: #C51605;
+    font-weight: 500;
+    font-size: 5rem;
+}
+
+.btn div {
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    border: 1px solid #C51605;
+    cursor: pointer;
+    background-color: #FD8D14;
+}
