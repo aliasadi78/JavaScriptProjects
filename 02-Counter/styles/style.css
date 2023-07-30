@@ -47,3 +47,33 @@ body {
     cursor: pointer;
     background-color: #FD8D14;
 }
+
+@media only screen and (max-width: 470px){
+    .btn {
+        flex-direction: column;
+    }
+    .main {
+        width: 99%;
+    }
+    .btn div {
+        margin: 1rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    .main {
+        width: 90%;
+    }
+    .btn div {
+        margin: 1rem;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .main {
+        width: 75%;
+    }
+    .btn div {
+        margin: 1rem;
+    }
+}
+
