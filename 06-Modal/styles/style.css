@@ -1,0 +1,68 @@
+@import url('reset.css');
+
+body {
+    background-image: url('../images/20191014_095206.jpg');
+    width: 100%;
+    height: 100vh;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
+}
+
+.main {
+    color: #000;
+    background-color: beige;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.main:hover {
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.image {
+    width: 350px;
+    height: 350px;
+}
+
+.modal-overlay {
+    background-color: rgba(256, 256, 256, .5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    visibility: hidden;
+}
+
+.modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+}
+
+.open-overlay {
+    visibility: visible;
+    z-index: 10;
+}
+
+.fa-times {
+    font-size: 2rem;
+    color: red;
+}
+
+.fa-times:hover {
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+@media only screen and (max-width : 650px) {}
+
+@media only screen and (min-width : 650px) {}
