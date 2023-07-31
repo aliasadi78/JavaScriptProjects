@@ -1,0 +1,57 @@
+@import url('reset.css');
+
+body {
+    background-color: #F4F2DE;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.question {
+    width: 95vw;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    transition: all 0.3s linear;
+    height: auto;
+}
+
+.question-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.question-text {
+    transition: all 0.3s linear;
+    height: 0;
+    overflow: hidden;
+}
+
+.show-text .question-text {
+    display: block;
+    transition: all 0.3s linear;
+    height: 6rem;
+}
+
+hr {
+    background-color: #A1CCD1;
+    border-radius: 1rem;
+    height: 0.3rem;
+}
+
+@media only screen and (max-width : 650px) {}
