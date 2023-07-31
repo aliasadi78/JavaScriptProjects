@@ -1,0 +1,106 @@
+@import url('reset.css');
+
+body {
+    background-color: #EDE4FF;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hr {
+    width: 25%;
+    height: 0.3rem;
+    background-color: #6528F7;
+    margin-bottom: 1rem;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+    grid-gap: 1rem;
+    width: 50%;
+}
+
+.buttons div {
+    border-radius: 0.5rem;
+    border: 1px solid #6528F7;
+    text-align: center;
+}
+
+.buttons div:hover {
+    background-color: #6528F7;
+    color: #fff;
+    cursor: pointer;
+}
+
+.foods {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 1rem;
+}
+
+.foods img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+.cart {
+    border: 1px solid #6528F7;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-areas: 'image image name price'
+        'image image description description'
+        'image image description description';
+    grid-gap: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.name {
+    grid-area: name;
+    border-bottom: 2px dotted #6528F7;
+}
+
+.price {
+    grid-area: price;
+    color: #6528F7;
+}
+
+.image {
+    grid-area: image;
+    border: 2px solid #A076F9;
+    width: 150px;
+    height: 150px;
+    border-radius: 0.5rem;
+}
+
+.description {
+    grid-area: description;
+}
+
+@media only screen and (max-width : 650px) {
+    .foods {
+        grid-template-columns: 1fr;
+    }
+
+    .cart {
+        grid-template-areas: 'null name price'
+            'image image'
+            'description description';
+    }
+}
+
+@media only screen and (min-width : 1000px) {
+    .buttons {
+        width: 40%;
+    }
+}
