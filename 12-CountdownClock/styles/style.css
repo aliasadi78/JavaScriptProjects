@@ -1,0 +1,39 @@
+@import url('reset.css');
+
+body {
+    background-color: hsl(32, 48%, 88%);
+}
+
+.container {
+    display: grid;
+    margin: 1rem;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.deadline {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.deadline div {
+    background-color: #331D2C;
+    margin: 1rem;
+    color: #A78295;
+}
+.img img {
+    width: 100%;
+    height: 100%;
+}
+.expired{
+    text-align: center;
+    width: 100%;
+    color: red;
+}
+@media only screen and (max-width : 650px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
