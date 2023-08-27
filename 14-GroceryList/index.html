@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/all.min.css">
+    <title>GroceryBud</title>
+</head>
+
+<body id="body" class="body">
+    <div style="display: flex;align-items: center;">
+        <span class="mode">dark</span>
+        <label class="switch" style="margin: .5rem;">
+            <input type="checkbox" class="check">
+            <span class="slider round"></span>
+        </label>
+        <span class="mode">light</span>
+    </div>
+    <div class="container">
+        <div class="message"></div>
+        <div class="title">Grocery Bud</div>
+        <div class="input">
+            <form class="form">
+                <input class="value" type="text" placeholder="egg" />
+                <button type="submit" class="btn submit-btn">Submit</button>
+            </form>
+        </div>
+        <div class="list"></div>
+        <div class="clear">Clear List</div>
+    </div>
+
+</body>
+<script src="./scripts/uuid.min.js"></script>
+<script src="./scripts/app.js"></script>
+
+</html>
