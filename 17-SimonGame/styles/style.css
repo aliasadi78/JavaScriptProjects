@@ -1,0 +1,92 @@
+@import url('reset.css');
+
+body {
+    background-color: #fff;
+}
+
+.outer-circle {
+    width: 512px;
+    height: 512px;
+    border: 2px solid #000;
+    border-radius: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+}
+
+#top-left {
+    width: 256px;
+    height: 256px;
+    border-radius: 256px 0 0 0;
+    background-color: darkgreen;
+}
+
+#top-right {
+    width: 256px;
+    height: 256px;
+    border-radius: 0 256px 0 0;
+    background-color: darkred;
+}
+
+#bottom-right {
+    width: 256px;
+    height: 256px;
+    border-radius: 0 0 0 256px;
+    background-color: goldenrod;
+}
+
+#bottom-left {
+    width: 256px;
+    height: 256px;
+    border-radius: 0 0 256px 0;
+    background-color: darkblue;
+}
+
+.inner-circle {
+    width: 256px;
+    height: 256px;
+    background-color: gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 100%;
+    margin: -128px 0px 0px -128px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.button {
+    background-color: lightgray;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    outline: none;
+    border: none;
+}
+
+.text1 span {
+    margin-left: 55px;
+    margin-right: 60px;
+}
+
+#turn {
+    background: #330000;
+    color: red;
+    font-family: courier;
+    font-size: 20px;
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+@media only screen and (max-width : 650px) {}
